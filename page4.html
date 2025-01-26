@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1; 
+            transform: translate(-50%, -50%);
+        }
+        .full-page-link {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            z-index: 1; 
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="page4.mp4" type="video/mp4"> 
+        <source src="page4.webm" type="video/webm"> 
+        Your browser does not support the video tag.
+    </video>
+
+    <a href="page5.html" class="full-page-link"></a> 
+</body>
+</html>
